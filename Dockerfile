@@ -1,6 +1,4 @@
 FROM node:18-alpine AS base
-ARG DATABASE_URL
-RUN echo ${DATABASE_URL}
 
 # Install dependencies only when needed
 FROM base AS deps
