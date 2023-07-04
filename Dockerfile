@@ -38,7 +38,7 @@ ARG ROQ_AUTH_LOGIN_URL
 ARG ROQ_AUTH_LOGOUT_URL
 ARG ROQ_AUTH_URL
 ARG SKIP_AUTHORIZATION
-RUN yarn build
+RUN yarn prisma generate && yarn build
 
 # If using npm comment out above and use below instead
 # RUN npm run build
