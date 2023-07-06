@@ -23,6 +23,7 @@ COPY . .
 ARG NEXT_PUBLIC_API_KEY
 ARG NEXT_PUBLIC_ENVIRONMENT_ID
 ARG NEXT_PUBLIC_ROQ_PLATFORM_URL
+ARG ROQ_PLATFORM_URL
 RUN yarn prisma generate && yarn build
 
 # Production image, copy all the files and run next
